@@ -11,7 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://books-git-raghu-demo.apps.prft-cps.zuvk.p1.openshiftapps.com/")
 @RestController
 @RequestMapping("/api")
 public class BookController {
