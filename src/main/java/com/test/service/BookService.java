@@ -19,10 +19,10 @@ public class BookService {
         return bRepo.findAll();
     }
 
-    public Book getBookById(int id) {
+    public Book getBookById(String id) {
         return bRepo.findById(id).get();
     }
-    public void deleteById(int id) {
+    public void deleteById(String id) {
         bRepo.deleteById(id);
     }
 }

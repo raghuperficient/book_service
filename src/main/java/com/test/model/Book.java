@@ -7,24 +7,22 @@ import jakarta.persistence.*;
 public class Book {
 
   @Id
-  @GeneratedValue(strategy=GenerationType.AUTO)
-  private int id;
+  private String id;
   private String title;
-  private String author;
-  public Book(String title, String author) {
+  private String userId;
+  public Book(String id, String userId) {
     super();
     this.id = id;
-    this.title = title;
-    this.author = author;
+    this.userId = userId;
   }
   public Book() {
     super();
     // TODO Auto-generated constructor stub
   }
-  public int getId() {
+  public String getId() {
     return id;
   }
-  public void setId(int id) {
+  public void setId(String id) {
     this.id = id;
   }
   public String getTitle() {
@@ -33,11 +31,11 @@ public class Book {
   public void setTitle(String name) {
     this.title = name;
   }
-  public String getAuthor() {
-    return author;
+  public String getUserId() {
+    return userId;
   }
-  public void setAuthor(String author) {
-    this.author = author;
+  public void setUserId(String userId) {
+    this.userId = userId;
   }
 
 
